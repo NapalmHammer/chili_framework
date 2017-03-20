@@ -316,6 +316,58 @@ void Graphics::PutPixel( int x,int y,Color c )
 	pSysBuffer[Graphics::ScreenWidth * y + x] = c;
 }
 
+void Graphics::PutLine(float x, float y, float xoff, float yoff, int r, int g, int b)
+{
+	float dx = xoff - x;
+	float dy = yoff - y;
+	float xinc;
+	float yinc;
+
+	if (abs(dx) >= abs(dy))
+	{
+		xinc = dx / (float)dx;
+		yinc = dy / (float)dx;
+		for (int i = 0; i <= abs(dx); i++)
+		{
+			PutPixel((int)round(x), (int)round(y), r, g, b);
+			x = x + xinc;
+			y = y + yinc;
+		}
+	}
+	else
+	{
+		xinc = dx / (float)dy;
+		yinc = dy / (float)dy;
+		for (int i = 0; i <= abs(dy); i++)
+		{
+			PutPixel((int)round(x), (int)round(y), r, g, b);
+			x = x + xinc;
+			y = y + yinc;
+		}
+	}
+}
+void Graphics::DrawSquare(int x, int y, int xoff, int yoff, int r, int g, int b)
+{
+	PutLine((float)x, (float)y, (float)xoff, (float)y, r, g, b);
+	PutLine((float)x, (float)y + 1, (float)x, (float)yoff, r, g, b);
+	PutLine((float)x + 1, (float)yoff, (float)xoff, (float)yoff, r, g, b);
+	PutLine((float)xoff, (float)y + 1, (float)xoff, (float)yoff - 1, r, g, b);
+}
+
+void Graphics::DrawSquare(Vec4 pos, int r, int g, int b)
+{
+	DrawSquare(pos.x, pos.y, pos.x2, pos.y2, r, g, b);
+}
+
+void Graphics::FillSquare(int x, int y, int xoff, int yoff, int r, int g, int b)
+{
+	for (int i = x + 1; i < xoff; i++)
+	{
+		for (int j = y + 1; j < yoff; j++)
+			PutPixel(i, j, r, g, b);
+	}
+}
+
 
 //////////////////////////////////////////////////
 //           Graphics Exception

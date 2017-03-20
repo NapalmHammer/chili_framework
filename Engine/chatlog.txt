@@ -1,0 +1,22 @@
+Client:Dummy, You can't disconnect if the socket isn't connected to anything. Get Schwifty.
+Client:You can't set your name on a server you aren't connected to. Kill yourself.
+Client:You can't set your name on a server you aren't connected to. Kill yourself.
+Client:ERROR: USER IS A DUMBER THAN DIRT, TRIED TO GET A FILE WHILE NOT CONNECTED TO ANYTHING. REEEEEEEE.
+Client:Connecte to server!
+:test
+:okay
+Client:Set name on server to yellowriver
+yellowriver:hi
+Client:Failed to connect to server. Winsock Error: 10061
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+UHOHS:Dummy, You can't disconnect if the socket isn't connected to anything. Git gud.
+Client:Failed to connect to server. Winsock Error: 10061
+UHOHS:Wow, user tried to send a file while not connected to anything.

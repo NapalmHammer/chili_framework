@@ -136,6 +136,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Chat\Bitmaps.h" />
+    <ClInclude Include="Chat\Chat.h" />
+    <ClInclude Include="Chat\ChatLog.h" />
+    <ClInclude Include="Chat\ChatWindow.h" />
+    <ClInclude Include="Chat\Client\Client.h" />
+    <ClInclude Include="Chat\Client\FileTransferData.h" />
+    <ClInclude Include="Chat\Client\Packet.h" />
+    <ClInclude Include="Chat\Client\PacketManager.h" />
+    <ClInclude Include="Chat\Client\PacketStructs.h" />
+    <ClInclude Include="Chat\Client\PacketType.h" />
+    <ClInclude Include="Chat\InputConsole.h" />
+    <ClInclude Include="Chat\Item.h" />
+    <ClInclude Include="Chat\Menu.h" />
+    <ClInclude Include="Chat\NapalmUtils.h" />
+    <ClInclude Include="Chat\Text.h" />
+    <ClInclude Include="Chat\Vec2.h" />
+    <ClInclude Include="Chat\Vec4.h" />
     <ClInclude Include="ChiliException.h" />
     <ClInclude Include="ChiliWin.h" />
     <ClInclude Include="Colors.h" />
@@ -151,6 +168,22 @@
     <ClInclude Include="SoundEffect.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Chat\Bitmaps.cpp" />
+    <ClCompile Include="Chat\Chat.cpp" />
+    <ClCompile Include="Chat\ChatLog.cpp" />
+    <ClCompile Include="Chat\ChatWindow.cpp" />
+    <ClCompile Include="Chat\Client\Client.cpp" />
+    <ClCompile Include="Chat\Client\ClientIni.cpp" />
+    <ClCompile Include="Chat\Client\FileTransferData.cpp" />
+    <ClCompile Include="Chat\Client\Packet.cpp" />
+    <ClCompile Include="Chat\Client\PacketManager.cpp" />
+    <ClCompile Include="Chat\Client\PacketStructs.cpp" />
+    <ClCompile Include="Chat\Client\ProcessPacket.cpp" />
+    <ClCompile Include="Chat\Client\SendGetMethods.cpp" />
+    <ClCompile Include="Chat\InputConsole.cpp" />
+    <ClCompile Include="Chat\Item.cpp" />
+    <ClCompile Include="Chat\Menu.cpp" />
+    <ClCompile Include="Chat\Text.cpp" />
     <ClCompile Include="COMInitializer.cpp" />
     <ClCompile Include="DXErr.cpp" />
     <ClCompile Include="Game.cpp" />

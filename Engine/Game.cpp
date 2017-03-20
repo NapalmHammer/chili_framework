@@ -24,7 +24,8 @@
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
-	gfx( wnd )
+	gfx( wnd ),
+	chat(gfx, wnd.kbd, wnd.mouse)
 {
 }
 
@@ -38,8 +39,10 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	chat.UpdateChat();
 }
 
 void Game::ComposeFrame()
 {
+	chat.DrawChat();
 }

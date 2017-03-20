@@ -24,6 +24,7 @@
 #include <wrl.h>
 #include "ChiliException.h"
 #include "Colors.h"
+#include "Chat/Vec4.h"
 
 class Graphics
 {
@@ -57,6 +58,10 @@ public:
 		PutPixel( x,y,{ unsigned char( r ),unsigned char( g ),unsigned char( b ) } );
 	}
 	void PutPixel( int x,int y,Color c );
+	void PutLine(float x, float y, float xoff, float yoff, int r, int g, int b);
+	void DrawSquare(int x, int y, int xoff, int yoff, int r, int g, int b);
+	void DrawSquare(Vec4 pos, int r, int g, int b);
+	void FillSquare(int x, int y, int xoff, int yoff, int r, int g, int b);
 	~Graphics();
 private:
 	Microsoft::WRL::ComPtr<IDXGISwapChain>				pSwapChain;
