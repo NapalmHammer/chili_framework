@@ -205,7 +205,6 @@ FilesMenu::FilesMenu(Menu* _menu)
 	//-- Add button items here --\/
 	AddItem(std::make_unique<SendFile>());
 	AddItem(std::make_unique<GetFile>());
-	AddItem(std::make_unique<TestButton>());
 	//---------------------------/\
 			//-- So we can get the button item count here, where it will be used later in the constructor. --//
 	buttItemCount = (int)items.size();

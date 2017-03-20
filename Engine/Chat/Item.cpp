@@ -42,7 +42,7 @@ bool Item::Update(const Keyboard::Event & _kbdEvent, const char & _curKey, const
 			return true;
 		}
 	}
-
+	return true;
 }
 
 void Item::CalculatePos(const Vec2& _pos, const int _width, const int _height)
@@ -144,6 +144,11 @@ void GetFile::OnClick(Menu* _menu)
 TestButton::TestButton()
 {
 	name = "test";
+}
+
+void TestButton::OnClick(Menu * _menu)
+{
+	_menu->GetClient()->GetChatLog().UpdateLog("Testbutton", "This button does nothing.");
 }
 
 SetNameButton::SetNameButton()

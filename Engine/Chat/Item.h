@@ -127,5 +127,5 @@ class TestButton : public Item
 {
 public:
 	TestButton();
-	void OnClick(Menu* _menu) { return; };
+	void OnClick(Menu* _menu);
 };
